@@ -1,0 +1,23 @@
+.container-fish {
+  background-color: #012e40;
+  padding-inline: 20px;
+  padding-block: 10px;
+  max-width: 500px;
+  color: #c7ffed;
+}
+
+.fish-text {
+  text-align: left;
+}
+
+.fish-line {
+  padding-inline: 15px;
+}
+
+.fish-line:hover {
+  background-color: #011526;
+}
+
+.btn-delete {
+  color: #c7ffed;
+}

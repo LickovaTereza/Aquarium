@@ -1,0 +1,30 @@
+.container-planner {
+  background-color: #012e40;
+  padding-inline: 20px;
+  padding-block: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  text-align: left;
+  color: #c7ffed;
+}
+
+.input-size {
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 90px;
+}
+
+.btn-set {
+  background-color: #025959;
+  border: none;
+  color: #c7ffed;
+}
+
+.btn-red {
+  background-color: red;
+  border: none;
+  color: #c7ffed;
+}
