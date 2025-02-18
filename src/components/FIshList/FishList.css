@@ -1,5 +1,5 @@
 .container-fish {
-  background-color: #012e40;
+  /* background-color: #012e40; */
   padding-inline: 20px;
   padding-block: 10px;
   max-width: 500px;
@@ -12,6 +12,8 @@
 
 .fish-line {
   padding-inline: 15px;
+  background-color: #012e40;
+  border-radius: 8px;
 }
 
 .fish-line:hover {

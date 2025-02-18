@@ -38,29 +38,29 @@ function App() {
 
   return (
     <div className="container">
-      <div className="row">
-        <h1>Aquarium</h1>
-        <div className="mt-5">
-          <TogglerButton onChoose={handleChoose} active={activeTab} />
-        </div>
-        {activeTab === 1 && (
-          <div>
-            <div className="mt-3">
-              <FishList data={listOfFish} onDelete={handleDelete} />
-            </div>
-            <div className="mt-3">
-              <AddForm data={listOfFish} onAdd={handleAdd} />
-            </div>
+      <h1 className="display-1">Aquarium</h1>
+      <div className="row mt-5">
+        <TogglerButton onChoose={handleChoose} active={activeTab} />
+      </div>
+      {activeTab === 1 && (
+        <div className="">
+          <div className="mt-3">
+            <FishList data={listOfFish} onDelete={handleDelete} />
           </div>
-        )}
-        {activeTab === 2 && (
-          <div className="container mt-3">
-            <div className="row">
+          <div className="mt-3">
+            <AddForm data={listOfFish} onAdd={handleAdd} />
+          </div>
+        </div>
+      )}
+      {activeTab === 2 && (
+        <div className="container">
+          <div className="row">
+            <div className="mt-4">
               <AquariumPlanner data={listOfFish} />
             </div>
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 }

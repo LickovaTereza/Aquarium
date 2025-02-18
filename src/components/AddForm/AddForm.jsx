@@ -49,34 +49,39 @@ function AddForm({ data, onAdd }) {
 
   return (
     <div className="container container-form">
-      <div className="row ">
-        <div className="col">
+      <div class="row align-items-start">
+        <div className="col-6 col-sm-4">
           <input
             type="text"
-            placeholder="Name"
+            placeholder="fish name"
             name="name"
-            className="input-name"
+            className="form-control input-name"
             value={newFish.name}
             onChange={handleChange}
           />
         </div>
-        <div className="col">
-          <select name="size" value={newFish.size} onChange={handleChange}>
+        <div className="col-6 col-sm-4">
+          <select
+            className="form-select"
+            name="size"
+            value={newFish.size}
+            onChange={handleChange}
+          >
             <option value="small">small</option>
             <option value="big">big</option>
           </select>
         </div>
 
-        <div className="col-auto">
+        <div className="col-12 col-sm-auto">
           <button
             disabled={!valid}
             onClick={() => {
               resetNewFish();
               onAdd(newFish);
             }}
-            className="btn-add "
+            className="btn btn-dark btn-add"
           >
-            Add to aquarium
+            Add fish
           </button>
         </div>
       </div>

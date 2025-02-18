@@ -7,6 +7,7 @@
   margin-bottom: 15px;
   text-align: left;
   color: #c7ffed;
+  border-radius: 8px;
 }
 
 .input-size {
@@ -17,14 +18,11 @@
   width: 90px;
 }
 
-.btn-set {
+.btn-planner {
+  margin-top: 10px;
   background-color: #025959;
   border: none;
-  color: #c7ffed;
-}
-
-.btn-red {
-  background-color: red;
-  border: none;
+  outline: none;
+  padding-inline: 15px;
   color: #c7ffed;
 }

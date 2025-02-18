@@ -1,7 +1,5 @@
 .container-toggler {
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
   max-width: 500px;
 }
 
@@ -14,4 +12,7 @@
 
 .active {
   background-color: #038c65;
+}
+
+.btn {
 }

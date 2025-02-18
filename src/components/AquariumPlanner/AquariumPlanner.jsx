@@ -85,19 +85,26 @@ function AquariumPlanner({ data }) {
   return (
     <div className="container">
       <div className="container-planner">
-        <h5>Currently in aquarium:</h5>
-        <span>small fish: {numberOfSmallFish}</span>
+        <p>
+          There are currently <strong>{numberOfSmallFish} small</strong> and{" "}
+          <strong>{numberOfBigFish} big</strong> fish in your school of fish.
+        </p>
+        <p>
+          The minimum aquarium volume must be{" "}
+          <strong>{requirements} litres</strong>.
+        </p>
+        {/* <span>small fish: {numberOfSmallFish}</span>
         <br />
         <span>big fish: {numberOfBigFish}</span>
         <br />
         <br />
-        <span>current requirements: {requirements} litres </span>
+        <span>volume requirements: {requirements} litres </span> */}
       </div>
-      <div className="container-planner">
-        <div className="row inputs-row">
+      <div className="container">
+        <div class="row align-items-center">
           <div className="col-auto">
             <input
-              className="input-size"
+              className="input-size form-control "
               type="number"
               name="height"
               min="0"
@@ -108,7 +115,7 @@ function AquariumPlanner({ data }) {
           </div>
           <div className="col-auto">
             <input
-              className="input-size"
+              className="input-size form-control "
               type="number"
               name="width"
               min="0"
@@ -119,7 +126,7 @@ function AquariumPlanner({ data }) {
           </div>
           <div className="col-auto">
             <input
-              className="input-size"
+              className="input-size form-control "
               type="number"
               name="length"
               min="0"
@@ -130,7 +137,9 @@ function AquariumPlanner({ data }) {
           </div>
           <div className="col-auto">
             <button
-              className={canSet === true ? "btn-set" : "btn-red"}
+              className={`btn btn-planner ${
+                canSet === true ? "btn-set" : "btn-danger"
+              }`}
               disabled={!canSet}
               onClick={setAquarium}
             >
